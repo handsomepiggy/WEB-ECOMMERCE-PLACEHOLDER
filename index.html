@@ -1,40 +1,73 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Home - E-Commerce Project</title>
+  <meta charset="UTF-8">
+  <title>Cookie Corner – Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <header>
   <nav>
-    <a href="index.html">Home</a>
-    <a href="products.html">Products</a>
-    <a href="cart.html">Cart</a>
-    <a href="admin.html">Admin</a>
+    <div class="logo">
+      <span>🍪</span>
+      <div>Cookie Corner</div>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="products.html">Cookies</a>
+      <a href="cart.html">Cart</a>
+      <a href="admin.html">Admin</a>
+    </div>
   </nav>
 </header>
 
-<div class="container">
-  <h1>Welcome to Our Client's E-Commerce Site</h1>
-  <p>This is our halfway progress — basic structure using HTML & CSS.</p>
-
-  <h2 class="section-title">Featured Products</h2>
-
-  <div class="grid">
-    <div class="card">
-      <img src="https://via.placeholder.com/200x120">
-      <p>Sample Product 1</p>
-      <p>RM 29.90</p>
+<main class="container">
+  <section class="hero">
+    <div class="hero-text">
+      <div class="hero-badge">Freshly baked deals just for you 🍪</div>
+      <h1>Welcome to Cookie Corner</h1>
+      <p>This e-commerce prototype is themed around cookies to make the interface more fun and friendly for our real client.</p>
+      <a href="products.html" class="btn btn-primary">View All Cookies</a>
     </div>
-
-    <div class="card">
-      <img src="https://via.placeholder.com/200x120">
-      <p>Sample Product 2</p>
-      <p>RM 19.90</p>
+    <div class="hero-illustration">
+      🍪🍪🍪
     </div>
-  </div>
-</div>
+  </section>
+
+  <section style="margin-top:25px;">
+    <h2 class="section-title">Featured Cookies</h2>
+    <p style="color:#6b4b2e; margin-bottom:8px;">A quick preview of some sample products. Final content will be replaced with our client's real items.</p>
+
+    <div class="grid">
+      <div class="card">
+        <img src="https://via.placeholder.com/300x200?text=Chocolate+Chip" alt="Chocolate Chip">
+        <div class="card-title">Chocolate Chip Cookie</div>
+        <div class="card-price">RM 3.50</div>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/300x200?text=Oatmeal+Raisin" alt="Oatmeal Raisin">
+        <div class="card-title">Oatmeal Raisin Cookie</div>
+        <div class="card-price">RM 3.00</div>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/300x200?text=Butter+Cookie" alt="Butter Cookie">
+        <div class="card-title">Butter Cookie</div>
+        <div class="card-price">RM 2.80</div>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/300x200?text=Matcha+Cookie" alt="Matcha Cookie">
+        <div class="card-title">Matcha Cookie</div>
+        <div class="card-price">RM 4.00</div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  © 2025 Cookie Corner — E-commerce project prototype (HTML & CSS only).
+</footer>
 
 </body>
 </html>
