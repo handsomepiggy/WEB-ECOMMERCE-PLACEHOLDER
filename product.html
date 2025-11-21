@@ -1,34 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Product Detail</title>
+  <meta charset="UTF-8">
+  <title>Cookie Corner – All Cookies</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <header>
   <nav>
-    <a href="index.html">Home</a>
-    <a href="products.html">Products</a>
-    <a href="cart.html">Cart</a>
-    <a href="admin.html">Admin</a>
+    <div class="logo">
+      <span>🍪</span>
+      <div>Cookie Corner</div>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="products.html">Cookies</a>
+      <a href="cart.html">Cart</a>
+      <a href="admin.html">Admin</a>
+    </div>
   </nav>
 </header>
 
-<div class="container">
-  <h1>Product Name</h1>
+<main class="container">
+  <h1 class="section-title">All Cookies</h1>
+  <p style="color:#6b4b2e; margin-bottom:8px;">At least five sample cookie products are listed here for the halfway check. Real client products will be added later.</p>
 
-  <div class="two-col">
-    <div>
-      <img src="https://via.placeholder.com/400x250" style="width:100%;border-radius:8px;">
+  <div class="grid">
+    <div class="card">
+      <img src="https://via.placeholder.com/300x200?text=Chocolate+Chip" alt="">
+      <div class="card-title">Chocolate Chip Cookie</div>
+      <div class="card-price">RM 3.50</div>
     </div>
-
-    <div>
-      <p><strong>Price:</strong> RM 39.90</p>
-      <p><strong>Description:</strong> This is a placeholder product description.</p>
+    <div class="card">
+      <img src="https://via.placeholder.com/300x200?text=Double+Chocolate" alt="">
+      <div class="card-title">Double Chocolate Cookie</div>
+      <div class="card-price">RM 4.20</div>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/300x200?text=Oatmeal+Raisin" alt="">
+      <div class="card-title">Oatmeal Raisin Cookie</div>
+      <div class="card-price">RM 3.00</div>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/300x200?text=Peanut+Butter" alt="">
+      <div class="card-title">Peanut Butter Cookie</div>
+      <div class="card-price">RM 3.80</div>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/300x200?text=Matcha+Cookie" alt="">
+      <div class="card-title">Matcha Cookie</div>
+      <div class="card-price">RM 4.00</div>
     </div>
   </div>
-</div>
+</main>
+
+<footer>
+  © 2025 Cookie Corner.
+</footer>
 
 </body>
 </html>
