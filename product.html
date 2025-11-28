@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Classic Choc Chip - Cookie Corner</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details - Cookie Corner</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -11,7 +13,7 @@
     <a href="index.html" class="logo">🍪 Cookie Corner</a>
     <div class="nav-links">
       <a href="index.html">Home</a>
-      <a href="products.html">Products</a>
+      <a href="products.html" class="active">Products</a>
       <a href="cart.html">Cart</a>
       <a href="admin.html">Admin</a>
     </div>
@@ -19,27 +21,31 @@
 </header>
 
 <div class="container">
-  <a href="products.html" style="text-decoration:none; color: #8D6E63;">← Back to Menu</a>
-  <br><br>
-
-  <div class="two-col">
-    <div>
-      <img src="https://via.placeholder.com/500x350/8D6E63/FFFFFF?text=Delicious+Cookie" style="width:100%; border-radius:12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+  <a href="products.html" class="btn btn-secondary" style="margin-bottom: 20px;">← Back to Menu</a>
+  
+  <div class="two-col" style="margin-top: 20px;">
+    <div class="card" style="padding: 0; overflow: hidden;">
+      <img src="https://via.placeholder.com/600x400/8D6E63/FFFFFF?text=Fresh+Cookie" style="width:100%; height: auto; margin:0; border-radius: 12px;">
     </div>
 
     <div>
-      <h1>Classic Chocolate Chip</h1>
-      <h2 style="color: #FFB74D;">RM 39.90</h2>
+      <h1 style="font-size: 2.5rem; margin-bottom: 10px;">Classic Chocolate Chip</h1>
+      <h2 style="color: var(--accent-gold); font-size: 2rem;">RM 39.90</h2>
       <p>Our signature cookie! Loaded with premium semi-sweet chocolate chips and baked to golden perfection. Crunchy on the edges, soft and chewy in the center.</p>
       
-      <br>
-      <p><strong>Contains:</strong> Eggs, Flour, Milk, Chocolate.</p>
-      
-      <br>
-      <a href="cart.html" class="btn">Add to Cart</a>
+      <div style="background: white; padding: 15px; border-radius: 8px; margin: 20px 0;">
+        <p><strong>Ingredients:</strong> Flour, Eggs, Brown Sugar, Butter, 70% Dark Chocolate.</p>
+        <p><strong>Allergens:</strong> Contains Dairy, Gluten.</p>
+      </div>
+
+      <a href="cart.html" class="btn" style="padding: 15px 40px;">Add to Cart 🛒</a>
     </div>
   </div>
 </div>
+
+<footer>
+  <p>&copy; 2025 Cookie Corner. Built with 🍪 and HTML/CSS.</p>
+</footer>
 
 </body>
 </html>
