@@ -1,17 +1,22 @@
-/* --- 1. FONTS & VARIABLES --- */
-/* Added 'Playfair Display' to match the elegant logo font */
+/* --- 1. FONTS & GLOBAL RESET --- */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Quicksand:wght@400;600&display=swap');
+
+
+* {
+  box-sizing: border-box; 
+}
 
 :root {
   /* BITESBYRAF PALETTE */
-  --bg-color: #FFFAFB;          /* Very pale pink background (almost white) */
-  --card-bg: #FFFFFF;           /* Pure White */
-  --primary-pink: #FF9EAA;      /* The Pink from the logo ring */
-  --primary-text: #2D2D2D;      /* Soft Black */
-  --accent-gold: #FFD54F;       /* Kept for "stars/sparkles" accents */
-  --shadow-soft: 0 5px 20px rgba(255, 158, 170, 0.15); /* Pinkish shadow */
-  --radius: 16px;               /* Slightly rounder for the "cute" look */
+  --bg-color: #FFFAFB;          
+  --card-bg: #FFFFFF;           
+  --primary-pink: #FF9EAA;      
+  --primary-text: #2D2D2D;      
+  --accent-gold: #FFD54F;       
+  --shadow-soft: 0 5px 20px rgba(255, 158, 170, 0.15); 
+  --radius: 16px;               
 }
+
 
 body {
   font-family: 'Quicksand', sans-serif;
