@@ -1,22 +1,22 @@
 /* --- 1. FONTS & GLOBAL RESET --- */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Quicksand:wght@400;600&display=swap');
 
-
+/* THIS FIXES THE BUTTON SPILLING OUT */
 * {
   box-sizing: border-box; 
 }
 
 :root {
   /* BITESBYRAF PALETTE */
-  --bg-color: #FFFAFB;          
-  --card-bg: #FFFFFF;           
-  --primary-pink: #FF9EAA;      
-  --primary-text: #2D2D2D;      
-  --accent-gold: #FFD54F;       
-  --shadow-soft: 0 5px 20px rgba(255, 158, 170, 0.15); 
+  --bg-color: #FFFAFB;          /* Very pale pink background */
+  --card-bg: #FFFFFF;           /* Pure White */
+  --primary-pink: #FF9EAA;      /* The Pink from the logo ring */
+  --primary-text: #2D2D2D;      /* Soft Black */
+  --accent-gold: #FFD54F;       /* Stars/Sparkles accents */
+  --danger-red: #FF7043;        /* For Hot badges */
+  --shadow-soft: 0 5px 20px rgba(255, 158, 170, 0.15); /* Pinkish shadow */
   --radius: 16px;               
 }
-
 
 body {
   font-family: 'Quicksand', sans-serif;
@@ -47,7 +47,6 @@ nav {
   margin: auto;
 }
 
-/* New Logo Image Styling */
 .logo-container {
   display: flex;
   align-items: center;
@@ -56,15 +55,15 @@ nav {
 }
 
 .logo-img {
-  height: 50px; /* Adjust size */
+  height: 50px;
   width: 50px;
-  border-radius: 50%; /* Makes it perfectly round */
+  border-radius: 50%;
   object-fit: cover;
   border: 2px solid var(--primary-pink);
 }
 
 .logo-text {
-  font-family: 'Playfair Display', serif; /* Matches logo font */
+  font-family: 'Playfair Display', serif;
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--primary-text);
@@ -76,7 +75,6 @@ nav {
   color: var(--primary-text);
   font-weight: 600;
   transition: color 0.3s;
-  font-family: 'Quicksand', sans-serif; /* Keep nav menu readable */
 }
 
 .nav-links a:hover, .nav-links a.active {
@@ -90,38 +88,17 @@ nav {
   padding: 30px 20px;
   flex: 1;
   width: 100%;
-  box-sizing: border-box;
-}
-
-.hero {
-  background-color: var(--primary-pink);
-  /* A soft pink gradient overlay */
-  background-image: linear-gradient(135deg, #FF9EAA 0%, #FFC1CC 100%);
-  padding: 60px 20px;
-  border-radius: var(--radius);
-  color: white;
-  text-align: center;
-  margin-bottom: 40px;
-  box-shadow: var(--shadow-soft);
-}
-
-.hero h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 3rem;
-  margin: 0 0 10px 0;
-  letter-spacing: 1px;
 }
 
 .section-title {
   font-family: 'Playfair Display', serif;
   color: var(--primary-text);
   margin-bottom: 25px;
+  font-size: 2rem;
   position: relative;
   display: inline-block;
-  font-size: 2rem;
 }
 
-/* Cute underline for titles */
 .section-title::after {
   content: '';
   display: block;
@@ -146,7 +123,7 @@ nav {
   box-shadow: var(--shadow-soft);
   transition: transform 0.2s ease;
   position: relative;
-  border: 1px solid #FFF0F3; /* Subtle pink border */
+  border: 1px solid #FFF0F3;
 }
 
 .card:hover {
@@ -178,7 +155,7 @@ nav {
 
 .btn {
   display: inline-block;
-  background-color: var(--primary-text); /* Black buttons for contrast */
+  background-color: var(--primary-text);
   color: white;
   padding: 12px 25px;
   border-radius: 50px;
@@ -191,8 +168,7 @@ nav {
 }
 
 .btn:hover {
-  background-color: var(--primary-pink); /* Turns pink on hover */
-  color: white;
+  background-color: var(--primary-pink);
   transform: scale(1.05);
 }
 
@@ -201,14 +177,59 @@ nav {
   width: 100%;
 }
 
-/* --- 5. FOOTER & EXTRAS --- */
+/* --- 5. FORMS & TABLES --- */
+input, textarea, select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--primary-pink);
+  box-shadow: 0 0 0 3px rgba(255, 158, 170, 0.2);
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+}
+
+th {
+  text-align: left;
+  padding: 15px;
+  color: var(--primary-text);
+  font-family: 'Playfair Display', serif;
+}
+
+td {
+  background: white;
+  padding: 15px;
+  box-shadow: var(--shadow-soft);
+}
+
+tr td:first-child { border-radius: 10px 0 0 10px; }
+tr td:last-child { border-radius: 0 10px 10px 0; }
+
+/* --- 6. FOOTER & EXTRAS --- */
 footer {
-  background-color: #FFF0F3; /* Very light pink footer */
+  background-color: #FFF0F3;
   color: var(--primary-text);
   text-align: center;
   padding: 40px 20px;
   margin-top: 50px;
   border-top: 3px solid var(--primary-pink);
+}
+
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
 }
 
 /* Badge Updates */
@@ -224,13 +245,9 @@ footer {
   border-radius: 20px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
+.badge.hot { background-color: var(--danger-red); }
 
-/* Keep layouts (Mobile, Two-col, Forms) the same as previous code... */
-.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; }
-input, textarea, select { width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 8px; box-sizing: border-box; font-family: 'Quicksand', sans-serif; }
-input:focus { outline: none; border-color: var(--primary-pink); box-shadow: 0 0 0 3px rgba(255, 158, 170, 0.2); }
-table { width: 100%; border-collapse: separate; border-spacing: 0 10px; }
-th { text-align: left; padding: 15px; color: var(--primary-text); font-family: 'Playfair Display', serif; }
-td { background: white; padding: 15px; box-shadow: var(--shadow-soft); }
-tr td:first-child { border-radius: 10px 0 0 10px; } tr td:last-child { border-radius: 0 10px 10px 0; }
-@media (max-width: 768px) { .two-col { grid-template-columns: 1fr; } nav { flex-direction: column; gap: 15px; } }
+@media (max-width: 768px) {
+  .two-col { grid-template-columns: 1fr; }
+  nav { flex-direction: column; gap: 15px; }
+}
