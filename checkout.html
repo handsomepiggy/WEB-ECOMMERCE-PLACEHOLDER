@@ -1,39 +1,73 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Checkout</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout - Cookie Corner</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <header>
   <nav>
-    <a href="index.html">Home</a>
-    <a href="products.html">Products</a>
-    <a href="cart.html">Cart</a>
-    <a href="admin.html">Admin</a>
+    <a href="index.html" class="logo">🍪 Cookie Corner</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="cart.html" class="active">Cart</a>
+      <a href="admin.html">Admin</a>
+    </div>
   </nav>
 </header>
 
 <div class="container">
-  <h1>Checkout</h1>
+  <h1 class="section-title">Checkout</h1>
 
   <div class="two-col">
-    <div>
-      <h2>Customer Details</h2>
-      <p>Name: ___________</p>
-      <p>Phone: ___________</p>
-      <p>Address: ___________</p>
+    <div class="card">
+      <h2>Delivery Details</h2>
+      <form>
+        <label>Full Name</label>
+        <input type="text" placeholder="e.g. John Doe">
+
+        <label>Email Address</label>
+        <input type="email" placeholder="e.g. john@email.com">
+
+        <label>Phone Number</label>
+        <input type="text" placeholder="e.g. 012-3456789">
+
+        <label>Delivery Address</label>
+        <textarea rows="4" placeholder="Enter your full address here..."></textarea>
+
+        <label>Payment Method</label>
+        <select>
+          <option>Online Banking (FPX)</option>
+          <option>Credit / Debit Card</option>
+          <option>E-Wallet (GrabPay/TNG)</option>
+        </select>
+      </form>
     </div>
 
     <div>
-      <h2>Order Summary</h2>
-      <p>Sample Product x1 — RM 39.90</p>
-      <p>Total: RM 39.90</p>
+      <div class="card">
+        <h2>Order Summary</h2>
+        <div style="border-bottom: 1px solid #eee; padding-bottom: 10px; margin-bottom: 10px;">
+          <p>Classic Choc Chip x1 <span style="float:right;">RM 39.90</span></p>
+          <p>Peanut Butter x2 <span style="float:right;">RM 25.80</span></p>
+          <p>Delivery Fee <span style="float:right;">RM 5.00</span></p>
+        </div>
+        <h3>Total: <span style="float:right; color: var(--accent-gold);">RM 70.70</span></h3>
+        <br>
+        <a href="#" class="btn btn-block">Confirm & Pay</a>
+      </div>
     </div>
   </div>
 
 </div>
+
+<footer>
+  <p>&copy; 2025 Cookie Corner. Built with 🍪 and HTML/CSS.</p>
+</footer>
 
 </body>
 </html>
