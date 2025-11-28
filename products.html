@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Our Menu - Cookie Corner</title>
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -11,7 +13,7 @@
     <a href="index.html" class="logo">🍪 Cookie Corner</a>
     <div class="nav-links">
       <a href="index.html">Home</a>
-      <a href="products.html">Products</a>
+      <a href="products.html" class="active">Products</a>
       <a href="cart.html">Cart</a>
       <a href="admin.html">Admin</a>
     </div>
@@ -23,34 +25,40 @@
 
   <div class="grid">
     <div class="card">
-      <img src="https://via.placeholder.com/200x160/8D6E63/FFFFFF?text=Cookie+A">
+      <span class="badge hot">Hot</span>
+      <img src="https://via.placeholder.com/300x200/8D6E63/FFFFFF?text=Double+Choc">
       <h3>Double Chocolate</h3>
-      <p class="price">RM 39.90</p>
-      <a href="product.html" class="btn btn-block">View</a>
+      <span class="price">RM 39.90</span>
+      <a href="product.html" class="btn btn-block">View Details</a>
     </div>
 
     <div class="card">
-      <img src="https://via.placeholder.com/200x160/8D6E63/FFFFFF?text=Cookie+B">
+      <img src="https://via.placeholder.com/300x200/8D6E63/FFFFFF?text=Macadamia">
       <h3>Macadamia Nut</h3>
-      <p class="price">RM 24.90</p>
-      <a href="product.html" class="btn btn-block">View</a>
+      <span class="price">RM 24.90</span>
+      <a href="product.html" class="btn btn-block">View Details</a>
     </div>
 
     <div class="card">
-      <img src="https://via.placeholder.com/200x160/8D6E63/FFFFFF?text=Cookie+C">
+      <span class="badge">New</span>
+      <img src="https://via.placeholder.com/300x200/8D6E63/FFFFFF?text=Almond">
       <h3>Almond Crunch</h3>
-      <p class="price">RM 14.90</p>
-      <a href="product.html" class="btn btn-block">View</a>
+      <span class="price">RM 14.90</span>
+      <a href="product.html" class="btn btn-block">View Details</a>
     </div>
 
     <div class="card">
-      <img src="https://via.placeholder.com/200x160/8D6E63/FFFFFF?text=Cookie+D">
+      <img src="https://via.placeholder.com/300x200/8D6E63/FFFFFF?text=Peanut+Butter">
       <h3>Peanut Butter</h3>
-      <p class="price">RM 12.90</p>
-      <a href="product.html" class="btn btn-block">View</a>
+      <span class="price">RM 12.90</span>
+      <a href="product.html" class="btn btn-block">View Details</a>
     </div>
   </div>
 </div>
+
+<footer>
+  <p>&copy; 2025 Cookie Corner. Built with 🍪 and HTML/CSS.</p>
+</footer>
 
 </body>
 </html>
