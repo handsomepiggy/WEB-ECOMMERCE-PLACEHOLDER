@@ -3,14 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Admin Panel - Cookie Corner</title>
+  <title>Admin Panel - bitesbyraf</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <header>
   <nav>
-    <a href="index.html" class="logo">🍪 Cookie Corner Admin</a>
+    <a href="index.html" class="logo-container">
+      <img src="logo.jpg" alt="bitesbyraf Logo" class="logo-img">
+      <span class="logo-text">bitesbyraf</span>
+    </a>
     <div class="nav-links">
       <a href="index.html">View Site</a>
       <a href="products.html">Products</a>
@@ -24,7 +27,7 @@
 
   <div class="two-col">
     <div class="card">
-      <h2>Add New Cookie</h2>
+      <h2 style="font-family: 'Playfair Display', serif;">Add New Treat</h2>
       <form>
         <label>Product Name</label>
         <input type="text" placeholder="Cookie Name">
@@ -43,7 +46,7 @@
     </div>
 
     <div class="card">
-      <h2>Existing Inventory</h2>
+      <h2 style="font-family: 'Playfair Display', serif;">Existing Inventory</h2>
       <table style="font-size: 0.9rem;">
         <tr>
           <th>Name</th>
@@ -52,18 +55,18 @@
         </tr>
         <tr>
           <td>Choc Chip</td>
-          <td>RM 39.90</td>
-          <td><a href="#" style="color: red;">Delete</a></td>
+          <td>RM 29.90</td>
+          <td><a href="#" style="color: var(--danger-red); font-weight:bold;">Delete</a></td>
         </tr>
         <tr>
-          <td>Oatmeal</td>
-          <td>RM 19.90</td>
-          <td><a href="#" style="color: red;">Delete</a></td>
+          <td>Fudgy Brownie</td>
+          <td>RM 35.00</td>
+          <td><a href="#" style="color: var(--danger-red); font-weight:bold;">Delete</a></td>
         </tr>
         <tr>
-          <td>Red Velvet</td>
-          <td>RM 24.90</td>
-          <td><a href="#" style="color: red;">Delete</a></td>
+          <td>Matcha Tart</td>
+          <td>RM 15.00</td>
+          <td><a href="#" style="color: var(--danger-red); font-weight:bold;">Delete</a></td>
         </tr>
       </table>
     </div>
@@ -71,7 +74,7 @@
 </div>
 
 <footer>
-  <p>&copy; 2025 Cookie Corner. Built with 🍪 and HTML/CSS.</p>
+  <p>&copy; 2025 bitesbyraf. Baked with <span style="color:red">♥</span> in Kuching.</p>
 </footer>
 
 </body>
