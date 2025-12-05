@@ -348,7 +348,7 @@ footer {
 
 /* Size the icons */
 .nav-icon {
-    width: 48px;        /* Icon size */
+    width: 60px;        /* Icon size */
     height: auto;
     transition: transform 0.2s;
 }
